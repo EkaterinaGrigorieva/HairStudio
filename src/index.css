@@ -1,5 +1,107 @@
+@font-face {
+  font-family: "SegoeUI";
+  src: url("./fonts/SegoeUIRegular/SegoeUIRegular.eot");
+  src: url("./fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),
+  url("./fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"),
+  url("./fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SegoeUI";
+  src: url("./fonts/SegoeUIBold/SegoeUIBold.eot");
+  src: url("./fonts/SegoeUIBold/SegoeUIBold.eot?#iefix")format("embedded-opentype"),
+  url("./fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"),
+  url("./fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
 body {
+  height: 100vh;
+  min-height: 700px;
+  background: url(img/bg-pattern.png), linear-gradient(to right, #D23143, #7F4191);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Helvetica, "Lato-Sans", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 40px;
+  font-weight: normal;
+}
+h2 {
+  margin-top: 0;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.mb-1 {
+  margin-bottom: 46px;
+}
+.mb-2 {
+  margin-bottom: 38px;
+}
+.mb-3 {
+  margin-bottom: 26px;
+}
+.mt-1 {
+  margin-top: 46px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-nav .header-nav__container{
+  width: 100%;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  list-style: none;
+}
+
+.header-nav__item a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  color: currentColor;
+}
+.btn {
+  display: inline-block;
+  height: 38px;
+  padding: 10px 20px;
+  color: inherit;
+  background: transparent;
+  font-size: 15px;
+  text-align: center;
+  border: 1px solid currentColor;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.btn:hover {
+  background-color: #fdc847;
+}
+.btn-block {
+  width: 100%;
+  display: block;
+}
+.btn--accent {
+  background: #FDC847;
+  color: #1f1f1f;
+  border: none;
+}
+
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
 }

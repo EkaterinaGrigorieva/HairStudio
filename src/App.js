@@ -2,8 +2,14 @@ import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 import logo from './logo.png';
 import './App.css';
-import Studio from './components/Studio';
+import Address from './components/Address';
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      adresses: ['Гороховая 45', 'Московская 2', 'Кузнечная 43', 'Кузнечный 14', 'Невский 56', 'Счастливая 56', 'Невский 45', 'Жуковского 86']
+    } 
+  }
   render() {
     return (
       <Router>
@@ -19,7 +25,7 @@ class App extends Component {
           </nav>
         </header>
         <main>          
-          <Route exact path="/" component={Studio} />
+          <Route exact path="/" component={Address} />
         </main>
         <footer className="row page-footer mt-1">
           <div className="col-10 offset-1">
