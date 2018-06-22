@@ -20,6 +20,7 @@
 
 body {
   height: 100vh;
+  min-height: 700px;
   background: url(../img/bg-pattern.png), linear-gradient(to right, #D23143, #7F4191);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Helvetica, "Lato-Sans", sans-serif;
   font-size: 20px;
@@ -82,6 +83,11 @@ h2 {
   border: 1px solid currentColor;
   border-radius: 20px;
   cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.btn:hover {
+  background-color: #fdc847;
 }
 .btn-block {
   width: 100%;
