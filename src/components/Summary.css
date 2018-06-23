@@ -45,6 +45,6 @@
   border: none;
 }
 
-*:focus {
+textarea:focus, input:focus {
   outline: none;
 }

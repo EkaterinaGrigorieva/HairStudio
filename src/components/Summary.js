@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
 import './Summary.css';
 
 
@@ -45,12 +44,14 @@ class Summary extends Component{
                 <div className="value">{window.selectedValues.price} руб.</div>
               </div>
             </div>
-            <form action="" className="summary-form">
+            <form action="" className="summary-form" onSubmit={ ()=>{ 
+                document.querySelector('.summary-wrapper').innerHTML = '<h3>Успешно! Ждем вас!</h3>'
+                }}>
               <label htmlFor="name">Имя: </label>
-              <input id="name" type="text"/>
+              <input id="name" type="text" required/>
               <label htmlFor="phone">Телефон: </label>
-              <input id="phone" type="text"/>
-              <button type="button" className="btn" onClick={ ()=>{ document.querySelector('.summary-block').innerHTML = '<h3>Успешно! Ждем вас!</h3>'}}>Записаться</button>
+              <input id="phone" type="text" required/>
+              <button type="submit" className="btn" >Записаться</button>
             </form>
           </div>            
         </div>
