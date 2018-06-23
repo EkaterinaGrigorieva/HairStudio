@@ -18,7 +18,8 @@
   font-weight: 600;
 }
 body {
-  height: 100vh;
+  position: relative;
+  height: calc(100vh+50px);
   min-height: 700px;
   background: url(img/bg-pattern.png), linear-gradient(to right, #D23143, #7F4191);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Helvetica, "Lato-Sans", sans-serif;
@@ -99,7 +100,7 @@ h2 {
 }
 
 .page-footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   height: 50px;
