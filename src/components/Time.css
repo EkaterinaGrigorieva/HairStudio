@@ -1,0 +1,40 @@
+.list-time {
+  background-color: rgba(255,255,255, 0);
+  border-radius: 8px;
+  text-align: center;
+  padding: 8px;
+  margin-bottom: 20px;
+  transition: background-color .3s ease;
+
+}
+.list-time--active {
+  background-color: rgba(255,255,255, .3);
+  border: 1px solid #fff;  
+  cursor: pointer;
+}
+
+.list-time--active:hover{
+border: none;
+  background-color: rgba(253,200,71, 1);
+  color: #1f1f1f;
+}
+
+.master-info__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.details-block__name{
+  font-size: 24px;
+  font-weight: bold;
+}
+.details-block__status{
+  font-size: 16px;
+}
+.master-info__details-block {
+  flex-grow: 1;
+}
+.master-info__next-free-block {
+  font-size: 16px;
+  text-align: right;
+}

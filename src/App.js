@@ -6,6 +6,8 @@ import Address from './components/Address';
 import Service from './components/Service';
 import Category from './components/Category';
 import Master from './components/Master';
+import Time from './components/Time';
+import Summary from './components/Summary';
 class App extends Component {
   constructor(props){
     super(props);
@@ -40,7 +42,8 @@ class App extends Component {
           <Route path="/service" component={Service} />
           <Route path="/category" component={Category} />
           <Route path="/master" component={Master} />
-          <Route path="/time" component={Master} />
+          <Route path="/time" component={Time} />
+          <Route path="/summary" component={Summary} />
         </main>
         <footer className="row page-footer mt-1">
           <div className="col-10 offset-1">

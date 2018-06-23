@@ -1,0 +1,50 @@
+.summary-wrapper {
+  border: 1px solid #fff;
+  border-radius: 16px;
+  padding: 30px 20px;
+}
+
+.summary-item {
+  display: flex;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.summary-item .title {
+  font-weight: bold;
+  width: 80px;
+}
+.summary-item .value {
+  font-weight: normal;
+}
+
+.summary-form {
+  margin-top: 40px;
+}
+.summary-form label {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+}
+.summary-form input {
+  width: 100%;
+  display: block;
+  border: none;
+  color: #fff;
+  border-bottom: 2px solid #FDC847;
+  font-size: 14px;
+  background: none;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.summary-form .btn {
+  display: block;
+  width: 120px;
+  margin: 0 auto;
+  color: #1f1f1f;
+  background-color: #FDC847;
+  border: none;
+}
+
+*:focus {
+  outline: none;
+}

@@ -55,6 +55,7 @@ class Category extends Component{
         },
       ]
     }
+    if(!window.selectedValues){window.selectedValues = {address: "Кузнечная 43", service: "Окрашивание", category: 3, price: 1300, master: "Настя", time: "12:00"}}
     console.log(window.selectedValues);
   }
   render(){
@@ -63,6 +64,8 @@ class Category extends Component{
         <div className="card" onClick={ () =>  { 
           
         window.selectedValues['category'] = props.buttonText.name;
+        window.selectedValues['price'] = props.buttonText.price;
+
         props.history.push({
           pathname: '/master'
         }) }}>

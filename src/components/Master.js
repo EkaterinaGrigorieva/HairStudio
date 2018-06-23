@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom';
 import './Master.css';
 
 
-class Category extends Component{  
+class Master extends Component{  
   constructor(props){
     super(props);
     this.state = {
@@ -34,6 +34,7 @@ class Category extends Component{
         }
       ]
     }
+    if(!window.selectedValues){window.selectedValues = {address: "Кузнечная 43", service: "Окрашивание", category: 3, price: 1300, master: "Настя", time: "12:00"}}
     console.log(window.selectedValues);
   }
   render(){
@@ -79,4 +80,4 @@ class Category extends Component{
   }
 }
 
-export default Category;
+export default Master;
