@@ -1,2 +1,2 @@
-# hairsaloon
-SPA for HairStudio on [GitHubPages](https://artemeesenin.github.io/hairsaloon/)
+# Hair Studio
+SPA for Hair Studio on [GitHubPages](https://artemeesenin.github.io/hairsaloon/)
